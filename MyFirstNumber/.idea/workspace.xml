@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b39344e9-f46f-416d-8300-dbfda73dc39f" name="Changes" comment="" />
+    <list default="true" id="b39344e9-f46f-416d-8300-dbfda73dc39f" name="Changes" comment="MyFirstNumber tutorial added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +56,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652798663330</updated>
     </task>
+    <task id="LOCAL-00001" summary="MyFirstNumber tutorial added">
+      <created>1652799011149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652799011149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MyFirstNumber tutorial added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyFirstNumber tutorial added" />
   </component>
 </project>
