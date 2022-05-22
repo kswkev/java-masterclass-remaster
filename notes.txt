@@ -1,1 +1,7 @@
+21. Defining the Main Method (Project HelloWorld)
 
+	The Main method is the entry point for java applications
+	Main method is defined using public static void main(String[] args)
+	Intellij has a shortcut for this "psvm"
+	Text can be output using System.out.println("blah")
+	Intellij has a shortcut for this "sout"
