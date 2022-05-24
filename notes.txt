@@ -80,4 +80,21 @@ Strings can also hold unicode characters i.e. mystring = "\u00A9 2019"
 Strings can be concatinated using + i.e. myNewString = myOldString + " some new text";
 Strings are immutable i.e. when strings are overwritten the old value is discarded and a new one created
 Concatinating numbers with string will automatically turn the numbers to strings
-  
+
+33. Operators, Operands and Expressions (Operators)
+
+Operators
+Special symbols that perform specific operations on one, two or three operands and return a result. e.g. 10 + 20, + is the operator
+
+Operands
+Any object that is manipulated by an operator e.g. int myVar = 15 + 12, 15 & 12 are the operands
+
+Expression
+A combination of variables, literals, method returns and operators e.g. int myVar = 15 + 12, 15 + 12 is the expression
+
+example operators:
++ addition
+- subtraction
+* multiplication
+/ division
+% mod (the remainder of a division, 4 % 11 = 3)
