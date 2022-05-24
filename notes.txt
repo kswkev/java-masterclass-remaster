@@ -1,7 +1,83 @@
+SECTION 3: FIRST STEPS
+
 21. Defining the Main Method (Project HelloWorld)
 
-	The Main method is the entry point for java applications
-	Main method is defined using public static void main(String[] args)
-	Intellij has a shortcut for this "psvm"
-	Text can be output using System.out.println("blah")
-	Intellij has a shortcut for this "sout"
+The Main method is the entry point for java applications
+Main method is defined using public static void main(String[] args)
+Intellij has a shortcut for this "psvm"
+Text can be output using System.out.println("blah")
+Intellij has a shortcut for this "sout"
+
+23. Variables (MyFirstNumber)
+
+24. Starting out with Expressions (MyExtraNumbers)
+
+25. Primitive Types (ByteShortIntLong)
+
+primitive types int (for holding numbers)
+defined
+	int <variableName> = <number>;
+
+int holds between -2,147,483,648 and 2,147,483,647 values up to 2^31, it's 32 bit but one bit is used for -/+
+moving outside it's range will cause the value to wrap around i.e. -2,147,483,648 - 1 = 2,147,483,647
+ints can also be defined using underscores rather than commas i.e. 2_147_483_647
+
+26. byte, short, long and width (ByteShortIntLong)
+
+more primitives for holding numbers, byte, short and long
+
+ranges are
+byte: -128 - 127 (2^7)
+short: -32,768 - 32,767 (2^15)
+long: -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 (2^63)
+
+27. Casting in Java (CastingInJava)
+
+by default numbers and calculations are assumed to be int, to store values as byte or short they need to be cast using:
+
+byte <var> = (byte) <expression>;
+short <var> = (short) <expression>
+
+longs can be defined with L at the end of a literal number i.e. 200L
+
+28. Primitive Type Challenge (PrimitiveTypeChallenge)
+
+29. Float and double Primitive Types (FloatAndDouble)
+
+primitive types float and double used for storing decimals
+defined
+	float <variableName> = <decimal>;
+	double <variableName> = <decimal>;
+
+ranges are
+float: 1.4e-45 - 3.4028235e38
+double: 4.9e-324 - 1.7976931348623157e308
+
+decimals are assumed to be double and need to be cast as float either by using (float) or by added f after a literal
+doubles can be cast using a d i.e 200d
+
+30. Floating Point Precision and a Challenge (PoundsToKilogramsChallange)
+
+31. The char and boolean Primitive Data Types (CharAndBoolean)
+
+Primitive type char is used to store a single unicode character
+defined
+	char <var> = '<character>'; or char <var> = '\u<unicode value>';
+
+unicode values can be found https://unicode-table.com/en/
+
+primitive type boolean holds either true or false
+defined
+	boolean <var> = true/false;
+
+32. Primitive Types Recap and the String Data Type (Strings)
+
+The class String can be used to hold text
+defined
+	String <var> = "<some text>";
+
+Strings can also hold unicode characters i.e. mystring = "\u00A9 2019"
+Strings can be concatinated using + i.e. myNewString = myOldString + " some new text";
+Strings are immutable i.e. when strings are overwritten the old value is discarded and a new one created
+Concatinating numbers with string will automatically turn the numbers to strings
+  
