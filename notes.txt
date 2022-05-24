@@ -98,3 +98,14 @@ example operators:
 * multiplication
 / division
 % mod (the remainder of a division, 4 % 11 = 3)
+
+34. Abbreviating Operators (Operators)
+
+There are shorthands of applying operators to the same var:
+
+<var>++ or <var>-- will increment or decrement the variable by 1
+
+<var> += <value> adds value to var
+<var> -= <value> subtracts value from var
+<var> *= <value> multiplies var by value
+<var> /= <value> divides var by value
