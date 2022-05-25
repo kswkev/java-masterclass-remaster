@@ -109,3 +109,19 @@ There are shorthands of applying operators to the same var:
 <var> -= <value> subtracts value from var
 <var> *= <value> multiplies var by value
 <var> /= <value> divides var by value
+
+35. if-then Statement (IfThen)
+
+If then statements are conditional logic that allows preceeding lines of code to be ran or not depending on the evanuation of the condition, syntax is:
+
+if (<condition>) then
+	code to run if <condition> is true
+
+the above is valid but this is clearer
+
+if (<condition>) then {
+	code to run if <condition> is true
+	}
+
+any code between the {} will be ran where as the first example will only run the next line
+
