@@ -125,7 +125,7 @@ if (<condition>) then {
 
 any code between the {} will be ran where as the first example will only run the next line
 
-36. Logical and Operator (LogicalAndOperator)
+36. Logical AND Operator (LogicalAndOperator)
 
 There are a number of different coditional operators that can be used in an if statement:
 
@@ -136,10 +136,20 @@ a >= b, a greater than or equal to b
 a < b, a less than b
 a <= b, a less than or equal to b
 
-The and operator "&&" can be used to combine conditions into one
+The and operator "&&" can be used to combine multiple conditions into one, it will evaluate to true if all conditions are true
 
 e.g.
 
 if (a == b && a > 100) {
+	do something
+}
+
+37. Logical OR Operator
+
+Like the and operator, the or operator "||" is used to combine multiple conditions, it will evaluate to true if any conditions are true
+
+e.g.
+
+if (a == b || a > 100) {
 	do something
 }
