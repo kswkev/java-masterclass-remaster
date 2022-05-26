@@ -172,3 +172,23 @@ operator precedence table: http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/o
 
 
 SECTION 4: JAVA TUTORIAL: EXPRESSIONS, STATEMENTS, CODE BLOCKS, METHODS AND MORE
+
+44. Keywords And Expressions
+
+list of reserved keywords: https://en.wikipedia.org/wiki/List_of_Java_keywords
+
+expressions are a combination of variables. values and operators, e.g
+
+in
+double kilometers = (100 * 1.609344);
+int highScore = 50;
+if (highScore == 50) {
+	System.out.println("This is an expression");
+}
+
+the expressions are:
+kilometers = (100 * 1.609344)
+highScore = 50
+highScore == 50
+"This is an expression"
+
