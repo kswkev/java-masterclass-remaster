@@ -154,7 +154,7 @@ if (a == b || a > 100) {
 	do something
 }
 
-39. Ternary Operator
+39. Ternary Operator (TernaryOperator)
 
 The ternary operator is used to set a value based on a condition, it's usually a shortcut to if else. The syntax is:
 <var> = <condition> ? <true value> : <false value>
@@ -163,3 +163,11 @@ e.g.
 boolean isCanDrink  = (age >= 18) ? true : false;
 
 parentheses is just to make things more readable and isn't required
+
+40. Operator Precedence and Operator Challenge (OperatorChallenge)
+
+Useful links:
+list of operators: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+operator precedence table: http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
+
