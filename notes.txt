@@ -171,3 +171,4 @@ list of operators: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/ops
 operator precedence table: http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
 
 
+SECTION 4: JAVA TUTORIAL: EXPRESSIONS, STATEMENTS, CODE BLOCKS, METHODS AND MORE
