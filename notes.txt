@@ -144,7 +144,7 @@ if (a == b && a > 100) {
 	do something
 }
 
-37. Logical OR Operator
+37. Logical OR Operator (LogicalOrOperator)
 
 Like the and operator, the or operator "||" is used to combine multiple conditions, it will evaluate to true if any conditions are true
 
@@ -153,3 +153,13 @@ e.g.
 if (a == b || a > 100) {
 	do something
 }
+
+39. Ternary Operator
+
+The ternary operator is used to set a value based on a condition, it's usually a shortcut to if else. The syntax is:
+<var> = <condition> ? <true value> : <false value>
+
+e.g.
+boolean isCanDrink  = (age >= 18) ? true : false;
+
+parentheses is just to make things more readable and isn't required
