@@ -198,4 +198,28 @@ a statement is a complete line of java (or multiple lines) ending in a ;
 
 java doesn't care about whitespace or indentation, you can add them as you please
 
+46. Code block and the If Then Else Control Statements (IfThenElse)
 
+code blocks are defined using {}, anything between the brackets is a code block
+
+if statements can have a number of else's attached to them that are executed if the if condition is false
+
+e.g.
+
+if (<condition>) {
+	do something if true
+} else {
+	do something else if false
+}
+
+else can also be combined with if to check a second condition, this can also have an else
+
+e.g.
+
+if (<condition 1>) {
+	do something if condition 1 true
+} else if (<condition 2>) {
+	do something if condition 1 false but condition 2 is true
+} else {
+	do something if neither are true
+}
