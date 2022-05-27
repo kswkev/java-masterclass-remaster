@@ -223,3 +223,28 @@ if (<condition 1>) {
 } else {
 	do something if neither are true
 }
+
+48. Methods in Java (MethodsInJava)
+
+A method is a reusuable code block and defined as:
+
+<access type> <return type> <name>(<parameters>)
+
+e.g. public int countMoney(int money1, int money2)
+
+Methods are called using their name and providing arguments for any parameters
+
+e.g. countMoney(100, 500);
+
+If a return type is specificed (void can be used if nothing is returned), a value of that type must be returned at the completion of any logical code block in the method. Missing this will cause an error.
+
+e.g.
+
+public int findLarger(int money1, int money2) {
+
+	if (money1 > money2) {
+		return money2;
+	} else {
+		return money1;
+	}
+}
