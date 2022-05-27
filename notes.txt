@@ -192,3 +192,10 @@ highScore = 50
 highScore == 50
 "This is an expression"
 
+45. Statements, whitespace and indentation
+
+a statement is a complete line of java (or multiple lines) ending in a ;
+
+java doesn't care about whitespace or indentation, you can add them as you please
+
+
