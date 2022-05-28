@@ -6,7 +6,8 @@ public class Main {
 
         calculateAndPrintScore(true, 800, 5, 100);
 
-        calculateAndPrintScore(true, 10000, 8, 200);
+        int highScore = calculateScore(true, 10000, 8, 200);
+        System.out.println("Your final score was " + highScore);
     }
 
     public static void calculateAndPrintScore(boolean gameOver, int score, int levelCompleted, int bonus) {
