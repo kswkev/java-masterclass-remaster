@@ -251,3 +251,15 @@ public int findLarger(int money1, int money2) {
 
 49. More On Methods And A Challenge (DisplayHighScorePositionChallange)
 
+58. Method Overloading (MethodOverloading)
+
+Method signatures are made up of the method name and types of arguments. Method signatures must be unqiue within a class but this allows
+for the same method name to be used as long as the number or types of arguments are different.
+
+e.g.
+
+public static int doCalc(int value)
+public static int doCalc(long value)
+public static int doCalc(int value1, int value2)
+
+can all exist in the same class
