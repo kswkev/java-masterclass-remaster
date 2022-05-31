@@ -263,3 +263,45 @@ public static int doCalc(long value)
 public static int doCalc(int value1, int value2)
 
 can all exist in the same class
+
+SECTION 5: CONTROL FLOW STATEMENTS
+
+63. The switch statement (TheSwitchStatement)
+
+The switch statement can be used to decide which code to run based on the value of a control variable, it's sytax is:
+
+switch (<control var>) {
+	case <condition value>:
+		code to run
+		break;
+	repeat for each condition
+
+	default:
+		code to run
+		break;
+}
+
+default like an else in at if statement catches anything that doesn't meet other conditions e.g.
+
+	int switchValue = 1;
+
+        switch (switchValue) {
+            case 1:
+                System.out.println("Value was 1");
+                break;
+
+            case 2:
+                System.out.println("Value was 2");
+                break;
+
+            case 3: case 4:case 5:
+                System.out.println("Value was either 3, 4, or 5");
+                break;
+
+            default:
+                System.out.println("Was not 1-5");
+                break;
+        }
+
+switch will work with only certain types, the primatives byte, short, char and int + String for java 7 and above.
+All blocks of code must include a break as the last command otherwise the next code block will also execute.
