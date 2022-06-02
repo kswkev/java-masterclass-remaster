@@ -305,3 +305,20 @@ default like an else in at if statement catches anything that doesn't meet other
 
 switch will work with only certain types, the primatives byte, short, char and int + String for java 7 and above.
 All blocks of code must include a break as the last command otherwise the next code block will also execute.
+
+65. The for Statement (TheForStatement)
+
+The for statment (or for loop) can be used to repatidly execute a code block until a given condition is no longer met, the syntax is:
+
+for (<control initialisation>; <termination condition>; <step>) {
+	<code to repeat>
+}
+
+e.g.
+
+for (int i=0; i <10; i++) {
+	System.out.println(i);
+}
+
+the above will output 0-9, i starts out at 0 and increase by 1 each time the loop completes. Once i reaches 10, the control condition is
+no longer true and the loop ends.
