@@ -322,3 +322,28 @@ for (int i=0; i <10; i++) {
 
 the above will output 0-9, i starts out at 0 and increase by 1 each time the loop completes. Once i reaches 10, the control condition is
 no longer true and the loop ends.
+
+68. The while and do while statements (WhileAndDoWhileStatements)
+
+The while statement (or loop) is another loop that will execute a block of code repatidly until a given condition is no longer met, unlike
+the for loop while does not have a controlling variable. It's syntax is:
+
+while (<control condition>) {
+	<code to repeat>
+}
+
+e.g.
+
+while (count < 10) {
+	count++;
+}
+
+There is also a do while form of this loop, that will always execute the code block at least once.
+
+do {
+	<code to repeat>
+} while (<control condition>);
+
+There are 2 other statements that can be used with loops, break and continue. Break will compleatly terminate the loop regardless of the control condtion. Continue will stop execution of the code block and move to the next iteration of the loop.
+
+
