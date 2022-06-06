@@ -346,4 +346,11 @@ do {
 
 There are 2 other statements that can be used with loops, break and continue. Break will compleatly terminate the loop regardless of the control condtion. Continue will stop execution of the code block and move to the next iteration of the loop.
 
+71. Parsing Values from a String (ParsingValuesFromString)
 
+Strings can be converted into primative numbers int, long, double etc, using parse methods build into the Integer, Long, Double etc classes, e.g.
+
+String numberAsString = "2018";
+int number = Integer.parseInt(numberAsString);
+
+Trying to pass anything other than a numerical value into these methods will throw a NumberFormatException.
