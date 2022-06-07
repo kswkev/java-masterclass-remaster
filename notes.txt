@@ -354,3 +354,23 @@ String numberAsString = "2018";
 int number = Integer.parseInt(numberAsString);
 
 Trying to pass anything other than a numerical value into these methods will throw a NumberFormatException.
+
+72. Reading User Input
+
+The Scanner class and it's methods can be used to read input from various sources, including the command line. A new instance can be created to read from the command line using:
+
+Scanner scanner = new Scanner(System.in);
+
+and should be closed after all operations are completed using:
+
+scanner.close();
+
+The scanner can read a line of text into a String variable using the nextLine() method:
+
+String name = scanner.nextLine();
+
+The scanner can also return numbers using certain methods that are automatically parsed:
+
+int yearOfBirth = scanner.nextInt();
+
+note: you may have to call nextLine right after this if requesting multiple values from the user.
