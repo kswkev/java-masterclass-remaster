@@ -357,7 +357,7 @@ Trying to pass anything other than a numerical value into these methods will thr
 
 72. Reading User Input
 
-The Scanner class and it's methods can be used to read input from various sources, including the command line. A new instance can be created to read from the command line using:
+The Scanner class (java.util.Scanner) and it's methods can be used to read input from various sources, including the command line. A new instance can be created to read from the command line using:
 
 Scanner scanner = new Scanner(System.in);
 
