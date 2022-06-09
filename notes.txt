@@ -411,4 +411,27 @@ public class Car {
 
 }
 
-note: IntelliJ's context actions can create getters and setters for you, right click on a field or alt+enter
+note: IntelliJ's can create getters and setters for you, Code menu > generate > getters and setters. 
+
+79. Constructors (BankingChallenge)
+
+A constructor is a special type of method that is called to create a object when the new keyword is used. There is a default constructor inherated can has no arguments, a zero argument constructor. This can be overwritten thou.
+
+Other constructors can be created using overloading. The this keyword can be used to call other constructors.
+
+e.g.
+
+public class Car {
+
+	private String model;
+
+	public Car() {
+		this("default");
+	}
+
+	public Car(String model) {
+		this.model = model;
+	}
+}
+
+note: IntelliJ's can create constructors for you using the Code menu > generate
