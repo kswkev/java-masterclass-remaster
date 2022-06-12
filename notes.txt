@@ -476,3 +476,10 @@ Classes can access the methods or fields of the parent using the super keyword. 
 Class: the blueprint used to create an instance or object
 Object / instance: created using the new keyword
 Reference: a pointer to an object in memory
+
+84. This vs super (ThisVsSuper)
+
+this: refers to the current object, usually used in setter methods
+super: refers to the parent object, usually used when overriding methods to access the parent method
+this(): the constructor used within the same class
+super(): the parent version of the constructor
