@@ -434,4 +434,45 @@ public class Car {
 	}
 }
 
-note: IntelliJ's can create constructors for you using the Code menu > generate
+note: IntelliJ's can create constructors for you using the Code menu > generate.
+
+81. Inheritance (Inheritance)
+
+Classes can build upon other classes using inheritance. This allows a class the abililty to access fields and methods of any class it inheritants from (in java this is done throught the extends keyword).
+
+e.g.
+
+public class Dog extends Animal {
+
+}
+
+This gives Dog access to the fields and methods of Animal.
+
+Classes can override the functionality of it's parents methods by creating it's own version, using the @Override annotation makes it clear that's what happening.
+
+e.g.
+
+public class Animal {
+
+	public void eat() {
+
+	}
+}
+
+public class Dog extends Animal {
+
+	@Override
+	public void eat() {
+
+	}
+} 
+
+Note: IntelliJ provides overridding options in the Code menu > generate.
+
+Classes can access the methods or fields of the parent using the super keyword. If Dog want to access the Animal version of eat it could call it using super.eat().
+
+83. Reference vs Object vs Instance vs Class (ReferenceVsOjectVsInstanceVsClass)
+
+Class: the blueprint used to create an instance or object
+Object / instance: created using the new keyword
+Reference: a pointer to an object in memory
