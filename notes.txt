@@ -493,3 +493,7 @@ overriding: a subclass defining a method with the same name and parameters as th
 
 When a method doesn't require the use of any instance fields or instance methods, it should be static.
 Instance methods require the use of fields or instance methods
+
+87. Static vs Instance variables (StaticVsInstanceVariables)
+
+There are a set of instance variables for each instance of that class, whereas static variables are shared between all instances
