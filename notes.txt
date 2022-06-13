@@ -483,3 +483,8 @@ this: refers to the current object, usually used in setter methods
 super: refers to the parent object, usually used when overriding methods to access the parent method
 this(): the constructor used within the same class
 super(): the parent version of the constructor
+
+85. Method Overloading vs Overriding (MethodOverloadingVsOverriding)
+
+overloading: multiple methods with the same name but different parameters
+overriding: a subclass defining a method with the same name and parameters as the parent class
