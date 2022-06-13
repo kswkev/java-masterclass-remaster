@@ -488,3 +488,8 @@ super(): the parent version of the constructor
 
 overloading: multiple methods with the same name but different parameters
 overriding: a subclass defining a method with the same name and parameters as the parent class
+
+86. Static vs Instance methods (StaticVsInstanceMethods)
+
+When a method doesn't require the use of any instance fields or instance methods, it should be static.
+Instance methods require the use of fields or instance methods
