@@ -497,3 +497,9 @@ Instance methods require the use of fields or instance methods
 87. Static vs Instance variables (StaticVsInstanceVariables)
 
 There are a set of instance variables for each instance of that class, whereas static variables are shared between all instances
+
+SECTION 7: OOP Part 2 - Composition, Encapsulation, and Polymorphism
+
+91. Composition (CompositionChallenge)
+
+Composition is the term in OOP whereby a class contains other classes as fields and interaction with those fields is done via the containing class
