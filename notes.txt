@@ -502,4 +502,8 @@ SECTION 7: OOP Part 2 - Composition, Encapsulation, and Polymorphism
 
 91. Composition (CompositionChallenge)
 
-Composition is the term in OOP whereby a class contains other classes as fields and interaction with those fields is done via the containing class
+Composition is the term in OOP whereby a class contains other classes as fields and interaction with those fields is done via the containing class.
+
+93. Encapsulation (Encapsulation)
+
+Encapsulation is the process of keeping class member fields private and providing accessor methods to those fields. This gives the developer more control over what other developers can do with their class. It also provides the benefit of making it easier to refactor.
