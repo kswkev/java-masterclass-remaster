@@ -507,3 +507,25 @@ Composition is the term in OOP whereby a class contains other classes as fields 
 93. Encapsulation (Encapsulation)
 
 Encapsulation is the process of keeping class member fields private and providing accessor methods to those fields. This gives the developer more control over what other developers can do with their class. It also provides the benefit of making it easier to refactor.
+
+95. Polymorphism (Polymorphism)
+
+Polymorphism is the term given to when multiple subclasses of a parent override methods to produce different functionality. The calling class can instanciate the subclasses as the parent class but the object will retain it's own version of it's methods. e.g.
+
+class Movie {
+	public String plot() {
+		return "some plot";
+	}
+}
+
+class Terminator2 {
+	@Override
+	public String plot() {
+        	return "Arnie kicks some butt";
+    	}
+}
+
+public static void Main() {
+	Movie t2 = new Terminator2();
+	t2.plot(); // would return Arnie kicks some butt
+}
