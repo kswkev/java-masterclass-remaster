@@ -541,7 +541,7 @@ Arrays can be defined in multiple ways:
 int[] myIntArray = new int[5]; defines an array of 5 elements of int
 double[] myDoubleArray = {1.00, 1.50, 1.75, 2.10}; defines an array of doubles with the values contained between the {}
 
-Arrays are zero bound, meaning the first element in an array is 0. So new int[5] creates an array with 5 elements 0, 1, 2, 3 & 4. Each element in an array can be access using [#] after the variable name:
+Arrays are zero indexed, meaning the first element in an array is 0. So new int[5] creates an array with 5 elements 0, 1, 2, 3 & 4. Each element in an array can be access using [#] after the variable name:
 
 int[] myIntArray = new int[5];
         myIntArray[0] = 1;
@@ -559,3 +559,49 @@ for (int i=0; i < array.length; i++) {
         }
 
 The java.utils.Arrays library has a collection of useful methods for dealing with arrays.
+
+102. Reference Types Vs Value Types (ReferenceVsValueTypes)
+
+Primative types tend to be value types, whereas Objects and arrays tend to be reference.
+
+Instantiating a new variable using a reference type, stores the local in memory for that object in the variable;
+Instantiating a new variable using a value type, stores the value of that object in the variable;
+
+e.g. Value
+
+int firstInt = 1;
+int secondInt = firstInt;
+
+secondInt contains the value 1, changing the value of firstInt has no effect on secondInt
+
+e.g. Reference
+
+int[] firstIntArray = new int[5];
+int[] secondIntArray = firstIntArray;
+
+secondIntArray points to the same area in memory as firstIntArray, if any of the values stored in firstIntArray are changed so too is secondIntArray.
+
+Goes the same for objects:
+
+CustomObject customObject = new CustomObject(1);
+CustomObject customObject1 = customObject;
+
+changing any of the fields in customObject will also reflect on customObject1.
+
+Method calls have similar rules:
+
+private static void changeInt(int myInt) {
+        myInt = 2;
+    }
+
+as int is a value type the value of the int used to call the method won't change, whereas:
+
+private static void changeArray(int[] myInt) {
+        myInt[0] = 2;
+    }
+
+    private static void changeCustomObject(CustomObject customObject) {
+        customObject.setIntField(2);
+    }
+
+both these methods will change the object passed to them
