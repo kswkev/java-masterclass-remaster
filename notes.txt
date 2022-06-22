@@ -604,4 +604,38 @@ private static void changeArray(int[] myInt) {
         customObject.setIntField(2);
     }
 
-both these methods will change the object passed to them
+both these methods will change the object passed to them.
+
+105. List and ArrayList (ArrayList)
+
+ArrayList is similar to primative arrays except this is an actual object with useful methods. ArrayList implements the List interface (https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
+
+An ArrayList can be created using:
+
+ArrayList<type> myList = new ArrayList<type>();
+
+elements can be added to an arrayList using the add method:
+
+myList.add(myItem);
+
+elements in an arrayList can be accessed using the get method with the index of the element:
+
+myItem = myList.get(1);
+
+elements can be removed using the remove method and passing the index of the element:
+
+myList.remove(2);
+
+elements can be overwritten using the set method with the index of the element and the replacement item:
+
+myList.set(1, myItem);
+
+elements can be looped over similar to how it is done for a primative array:
+
+for (int i=0; i < myList.size(); i++) {
+            System.out.println((i+1) + ". " + myList.get(i));
+        }
+
+elements can be found in an arrayList using the indexOf method (this can be used with the get method to return the actual element):
+
+int position = myList.indexOf(myItem);
