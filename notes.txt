@@ -639,3 +639,27 @@ for (int i=0; i < myList.size(); i++) {
 elements can be found in an arrayList using the indexOf method (this can be used with the get method to return the actual element):
 
 int position = myList.indexOf(myItem);
+
+112. Autoboxing and Unboxing
+
+Autoboxing and unboxing are the terms used to describe the use of the class equlievent to primatives:
+
+int = Integer
+double = Double etc
+
+Creating a new Integer from an int can be done using Integer.valueOf(), autoboxing e.g.
+
+Integer myInteger = Integer.valueOf(3);
+
+or:
+
+Integer myInteger = 3;
+
+these 2 statements are equelvant, the java complier will actually replace the 2nd example with the first at compile time.
+
+Integers can be unboxed using:
+
+System.out.println(myInteger.intValue());
+System.out.println(myInteger);
+
+again the 2nd statement is actually replaced by the first at compile time.
