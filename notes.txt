@@ -663,3 +663,25 @@ System.out.println(myInteger.intValue());
 System.out.println(myInteger);
 
 again the 2nd statement is actually replaced by the first at compile time.
+
+116. LinkedList (LinkedLists)
+
+Lists can be looped over using the iterator class, this is what the java complier uses when a for each loop is used in the code.
+The main iterator class has the ability to check if the next item in the list exists using the hasNext method, the next method is used
+to return the next item and move the iterator along one.
+
+ArrayList<Integer> list = new ArrayList<>();
+Iterator<Integer> iterator = list.iterator();
+
+while (iterator.hasNext()) {
+        if (iterator.next() > randoms[i]) {
+		break;
+	}
+}
+
+The arrayList provides fast access to read each of it's items, but is costly if an item has to be added in the middle of the list.
+
+The linkedList is similar to the ArrayList but it provides better performance to add items anywhere in the list. The linkedList has it's
+own iterator which provides the same functionality as the arrayList one but also provides the ability to move to the previous item.
+
+ListIterator<Integer> iterator = linkedList.listIterator();
