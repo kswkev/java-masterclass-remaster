@@ -685,3 +685,11 @@ The linkedList is similar to the ArrayList but it provides better performance to
 own iterator which provides the same functionality as the arrayList one but also provides the ability to move to the previous item.
 
 ListIterator<Integer> iterator = linkedList.listIterator();
+
+Iterators don't actually point to the current item in a list, instead they exist between the items.
+
+e.g.
+
+1 2 3 4 5
+
+if .next() just returned 2, then the next .next() will return 3 but .previous() will return 2 (not 1)
