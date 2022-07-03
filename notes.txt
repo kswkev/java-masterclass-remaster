@@ -693,3 +693,39 @@ e.g.
 1 2 3 4 5
 
 if .next() just returned 2, then the next .next() will return 3 but .previous() will return 2 (not 1)
+
+SECTION 9 INNER AND ABSTRACT CLASSES & INTERFACES
+
+123. Interfaces (Interfaces)
+
+Interfaces are used to define the public methods a class which implements it will contain. This allows code to define variables as the interface and change the actual class implementation.
+
+An interface is defined as:
+
+public interface ITelephone {
+
+	void powerOn();
+	void answer();
+}
+
+Interface methods don't need to be defined as public or private as they are public by default. For a class to implement an interface the implement keyword is used:
+
+public class Mobile implements ITelephone {
+
+	public void powerOn() {
+
+	}
+
+	public void answer() {
+
+	}
+
+}
+
+A class that implements an interface must provide methods for each of the methods detailed in the interface.
+
+Calling classes can then create variable based off the interface and instanciate using classes that implement that interface e.g.
+
+	public ITelephone phone;
+
+	phone = new Mobile();
