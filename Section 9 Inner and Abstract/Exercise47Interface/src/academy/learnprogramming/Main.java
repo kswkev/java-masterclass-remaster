@@ -1,5 +1,7 @@
 package academy.learnprogramming;
 
+import java.util.List;
+
 public class Main {
 
 //    Create a simple interface that allows an object to be saved to some sort of storage medium.
@@ -70,5 +72,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Player player = new Player("Thorn", 20, 5);
+        System.out.println(player);
+
+        List<String> playerSave = player.write();
+        Player player2 = new Player("temp", 1, 1);
+        player2.read(playerSave);
+        System.out.println(player2);
     }
 }
