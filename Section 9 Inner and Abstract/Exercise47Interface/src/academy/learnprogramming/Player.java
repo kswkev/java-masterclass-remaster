@@ -29,9 +29,11 @@ public class Player implements ISaveable {
 
     @Override
     public void read(List<String> items) {
-        List<String> readItems = new ArrayList<>();
         if (null != items && !items.isEmpty()) {
-            readItems = items;
+            this.name = items.get(0);
+            this.hitPoints = Integer.parseInt(items.get(1));
+            this.strength = Integer.parseInt(items.get(2));
+            this.weapon = items.get(3);
         }
     }
 

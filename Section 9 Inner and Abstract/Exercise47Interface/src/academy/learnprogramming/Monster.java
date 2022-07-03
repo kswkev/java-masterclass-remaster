@@ -26,9 +26,10 @@ public class Monster implements ISaveable {
 
     @Override
     public void read(List<String> items) {
-        List<String> readItems = new ArrayList<>();
         if (null != items && !items.isEmpty()) {
-            readItems = items;
+            this.name = items.get(0);
+            this.hitPoints = Integer.parseInt(items.get(1));
+            this.strength = Integer.parseInt(items.get(2));
         }
     }
 
@@ -41,23 +42,12 @@ public class Monster implements ISaveable {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getHitPoints() {
         return hitPoints;
-    }
-
-    public void setHitPoints(int hitPoints) {
-        this.hitPoints = hitPoints;
     }
 
     public int getStrength() {
         return strength;
     }
 
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
 }
