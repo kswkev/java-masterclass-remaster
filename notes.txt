@@ -729,3 +729,111 @@ Calling classes can then create variable based off the interface and instanciate
 	public ITelephone phone;
 
 	phone = new Mobile();
+
+127. Inner classes (InnerClasses)
+
+Classes can be defined within other classes, this is usally done when there is no need for a full class outside of the containing class e.g.
+
+public class PlayerCharacter {
+
+	private Weapon equipedWeapon;
+
+	public void setEquipedWeapon(Weapon equipedWeapon) {
+        	this.equipedWeapon = equipedWeapon;
+    	}
+
+	public class Weapon {
+        	private String weaponName;
+        	private int damage;
+
+        	public Weapon(String weaponName, int damage) {
+            		this.weaponName = weaponName;
+            		this.damage = damage;
+	        }
+
+	        public String getWeaponName() {
+        	    return weaponName;
+        	}
+
+	        public int getDamage() {
+        	    return damage;
+       		}
+    	}
+
+}
+
+The inner class can be created using:
+
+PlayerCharacter thorn = new PlayerCharacter("Thron", 50);
+thorn.setEquipedWeapon(thorn.new Weapon("Sword", 10));
+
+Inner classes can also be private and handled internally in the containing class:
+
+public class PlayerCharacter {
+
+	private Equipment helmet;
+
+	public void equipHelmet(String itemName, int armorValue) {
+        	this.helmet = new Equipment(itemName, armorValue);
+    	}
+
+	private class Equipment {
+        	private String itemName;
+        	private int armorValue;
+
+        	public Equipment(String itemName, int armorValue) {
+            		this.itemName = itemName;
+            		this.armorValue = armorValue;
+        	}
+
+        	public String getItemName() {
+            		return itemName;
+        	}
+
+        	public int getArmorValue() {
+            		return armorValue;
+        	}
+    }
+}
+
+This can then be used like this:
+
+thorn.equipHelmet("Iron Helm", 10);
+
+Another way to handle inner classes is though the use of a local class, an interface will be used for the field that will contain the local class and a class implementing that interface will be created within a method block:
+
+public class PlayerCharacter {
+
+	private List<Magic> spells;
+
+	public void addSpell(Magic spell) {
+        	this.spells.add(spell);
+    	}
+
+	public interface Magic {
+        	public void cast();
+    	}
+}
+
+public static void main(String[] args) {
+
+	 class FireBall implements PlayerCharacter.Magic {
+
+            @Override
+            public void cast() {
+                System.out.println("A fireball bursts against the moster setting it alight");
+            }
+        }
+
+        thorn.addSpell(new FireBall());
+
+}
+
+Another form of this is the anonymous class, this is a special class that is only used once and dosen't even have a name:
+
+thorn.addSpell(new PlayerCharacter.Magic() {
+            @Override
+            public void cast() {
+                System.out.println("Ice shards fall from the sky freezing in place all those around the area");
+            }
+        });
