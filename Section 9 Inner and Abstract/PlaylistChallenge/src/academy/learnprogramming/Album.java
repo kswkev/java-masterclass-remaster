@@ -5,25 +5,19 @@ import java.util.ArrayList;
 public class Album {
 
     private String name;
-    private ArrayList<Song> songs;
+    private SongList songList;
 
     public Album(String name) {
         this.name = name;
-        songs = new ArrayList<>();
+        songList = new SongList();
     }
 
     public void addSong(String name, double duration) {
-        this.songs.add(new Song(name, duration));
+        this.songList.addSong(name, duration);
     }
 
     public Song findSong(String name) {
-        for (Song song : songs) {
-            if (song.getTitle().equals(name)) {
-                return song;
-            }
-        }
-
-        return null;
+       return this.songList.findSong(name);
     }
 
     public String getName() {
@@ -31,6 +25,33 @@ public class Album {
     }
 
     public ArrayList<Song> getSongs() {
-        return songs;
+        return this.songList.getSongs();
+    }
+
+    private class SongList {
+
+        private ArrayList<Song> songs;
+
+        public SongList() {
+            songs = new ArrayList<>();
+        }
+
+        public void addSong(String name, double duration) {
+            this.songs.add(new Song(name, duration));
+        }
+
+        public Song findSong(String name) {
+            for (Song song : songs) {
+                if (song.getTitle().equals(name)) {
+                    return song;
+                }
+            }
+
+            return null;
+        }
+
+        public ArrayList<Song> getSongs() {
+            return this.songs;
+        }
     }
 }
