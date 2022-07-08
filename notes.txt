@@ -837,3 +837,44 @@ thorn.addSpell(new PlayerCharacter.Magic() {
                 System.out.println("Ice shards fall from the sky freezing in place all those around the area");
             }
         });
+
+130. Abstract Classes (AbstractClasses)
+
+Abstract classes are a special type of class that is generally used for inheratence, like interfaces abstract classes can specify methods a class which extends it has to implement, these are known as abstract methods. Abstract classes can also contain fields and implemented methods which calling classes can use directly or override. Abstract classes can't be instanciated themselves only extended.
+
+An abstract class is defined by using the abstract keyword:
+
+public abstract class Animal {
+
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public abstract void eat();
+    public abstract void breathe();
+
+    public String getName() {
+        return name;
+    }
+}
+
+A class can inherit from an abstract class using the extends keyword:
+
+public class Dog extends Animal{
+    
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(getName() + " is eating");
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Breathe in, breathe out");
+    }
+}
