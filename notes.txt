@@ -878,3 +878,42 @@ public class Dog extends Animal{
         System.out.println("Breathe in, breathe out");
     }
 }
+
+
+SECTION 10: JAVA GENERICS
+
+137. Our Generics Class (Generics)
+
+Generics allows the creation of classes without specifying classes. Lists make heavy use of this, e.g. List<String>, the class inside the <> is the generic being defined. A generic class can look like this:
+
+public class ValueHolder<T> {
+
+	private T value;
+
+	public ValueHolder(T value) {
+		this.value = value;
+	}
+
+	public void setValue(T value) {
+		this.value = value;
+	}
+
+	public T getValue() {
+		return this.value;
+	}
+}
+
+The above class can be used to hold any class in the value field, the class can be used like this:
+
+ValueHolder<Integer> myIntHolder = new ValueHolder<>(25);
+ValueHolder<String> myStringHolder = new ValueHolder<>("Hello World");
+
+Generics can be restricted to specific implementations or extending certain classes e.g.
+
+public class ValueHolder<T implements MyInterface> 
+
+or
+
+public class ValueHolder<T extends Parent> 
+
+This allows the generic value to have certain methods calls against it, if the Parent class contains a method called myMethod, any T field can use the myMethod method.
