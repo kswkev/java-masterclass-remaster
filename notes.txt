@@ -917,3 +917,35 @@ or
 public class ValueHolder<T extends Parent> 
 
 This allows the generic value to have certain methods calls against it, if the Parent class contains a method called myMethod, any T field can use the myMethod method.
+
+SECTION 11 NAMING CONVENTIONS AND PACKAGES, STATIC AND FINAL KEYWORDS
+
+142. Packages (Packages)
+
+Package naming follows the directory structure the code is in, e.g. package academy.learnprogramming is held in src/academy/lernprogramming. If there is a need to move classes between packages, it is best to use the refactor > move option (in intellij away).
+
+Import statements can be used to import specific classes or full packages, e.g.
+
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+
+java.awt.* imports all classes in the java.awt package, it doesn't however import packages under it. If that were the case there wouldn't be a need to import java.awt.event.WindowAdapter as the event package would already be imported. The * is just shorthand for import all classes in that package, import java.awt.event.WindowAdapter imports the single class WindowAdapter.
+
+Once a class has been imported it can be refered to directly by it's name in the code. It is also possible to use a class without importing it by using it's full package name when refering to it, e.g.
+
+org.w3c.dom.Node node = null;
+
+This is useful on the rare occasions when you have to use multiple classes from different packages which have the same name, one can be imported but the others will need their full names to be used, e.g.
+
+import javafx.scene.Node;
+
+public class Main {
+	public static void Main(String[] args) {
+		Node node = null;
+		org.w3c.dom.Node node = null;
+	}
+}
+
+In intelliJ control clicking on a class will display the java class, doing the same for a package displays the package in the External Libraries section of the Project pane. Useful for seeing what other classes exist in that package.
+
+IntelliJ has the option to create artifacts from your packages, this option is available through the Project Structure > Artifacts  option. Artifacts can also be included in projects through the Project Structure > Libraries. Adding an artifact makes it available for importing and will appear in the External Libraries section in the Project pane.
