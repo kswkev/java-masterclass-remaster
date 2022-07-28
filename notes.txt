@@ -949,3 +949,27 @@ public class Main {
 In intelliJ control clicking on a class will display the java class, doing the same for a package displays the package in the External Libraries section of the Project pane. Useful for seeing what other classes exist in that package.
 
 IntelliJ has the option to create artifacts from your packages, this option is available through the Project Structure > Artifacts  option. Artifacts can also be included in projects through the Project Structure > Libraries. Adding an artifact makes it available for importing and will appear in the External Libraries section in the Project pane.
+
+150. The static statement (Statics)
+
+The static keyword is used for functionality on the class itself rather than an instance of that class. It can be used in a number of ways:
+
+static class variables:
+
+a static variable is shared across all instances of that class and will contain the same value.
+
+static methods:
+
+static methods are called against the class iteslf rather than an instance, e.g. Math.random()
+
+static inner classes:
+
+normal classes can't be static but inner classes can.
+
+static initializer blocks
+
+the static initializser block is called a single time when the class is first referenced, either in a static way or by calling a constructor. The initializer block is ran before any other code in that class. It's syntax is:
+
+static {
+	do something
+}
