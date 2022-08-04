@@ -973,3 +973,14 @@ the static initializser block is called a single time when the class is first re
 static {
 	do something
 }
+
+
+151. The final statement
+
+The final keyword is used in 2 context;
+
+a final variable can only be set once, any other attempts to set it will cause an error. Class constants are generally defined as private static final with an all caps name e.g.
+
+private static final long MY_IP_ADDRESS = 19216802;
+
+methods can also have the final keyword used in their signature, this stops any subclasses from overwriting that method.
